@@ -5,8 +5,9 @@ import hero_image from "../../assets/hero_image.png";
 import hero_image_back from "../../assets/hero_image_back.png";
 import Heart from "../../assets/heart.png";
 import Calories from "../../assets/calories.png";
-
+import { motion } from "framer-motion";
 const Hero = () => {
+  const transition = { type: "spring", duration: 3 };
   return (
     <div className="hero">
       <div className="blur hero-blur"></div>
@@ -14,7 +15,11 @@ const Hero = () => {
         <Header />
         {/* the best add */}
         <div className="the-best-ad">
-          <div></div>
+          <motion.div
+            initial={{ left: "238px" }}
+            whileInView={{ left: "8px" }}
+            transition={{ ...transition, type: "tween" }}
+          ></motion.div>
           <span>The best fitness club in the town</span>
         </div>
         {/* Hero Heading */}
@@ -57,21 +62,38 @@ const Hero = () => {
       <div className="right-h">
         <button className="btn">Join Now</button>
 
-        <div className="heart-rate">
+        <motion.div
+          transition={transition}
+          initial={{ right: "-1rem" }}
+          whileInView={{ right: "6rem" }}
+          className="heart-rate"
+        >
           <img src={Heart} alt="" />
           <span>Heart Rate</span>
           <span>116 bpm</span>
-        </div>
+        </motion.div>
         {/* ---hero images--- */}
         <img src={hero_image} alt="" className="hero-image" />
-        <img src={hero_image_back} alt="" className="hero-image-back" />
-        <div className="calories">
+        <motion.img
+          initial={{ right: "11rem" }}
+          whileInView={{ right: "25rem" }}
+          transition={transition}
+          src={hero_image_back}
+          alt=""
+          className="hero-image-back"
+        />
+        <motion.div
+          transition={transition}
+          initial={{ right: "30rem" }}
+          whileInView={{ right: "60rem" }}
+          className="calories"
+        >
           <img src={Calories} alt="" />
           <div>
             <span>Calories burned</span>
             <span>220 kcal</span>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

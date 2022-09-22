@@ -2,12 +2,11 @@
     display: flex;
     justify-content: space-between;
 
-
 }
 
 .left-h {
     padding: 3rem;
-    padding-top: 1rem;
+    padding-top: 3rem;
     flex: 3;
     display: flex;
     gap: 2rem;
@@ -27,7 +26,7 @@
     background-color: #363d42;
     border-radius: 4rem;
     width: fit-content;
-    padding: 20px 13px;
+    padding: 23px 15px;
     text-transform: uppercase;
     color: white;
     position: relative;
@@ -124,16 +123,16 @@
     gap: 2rem;
     background-color: var(--darkGrey);
     width: fit-content;
-    padding: 2rem;
+    padding: 1.5rem;
     align-items: start;
     border-radius: 5px;
     position: absolute;
-    right: 5rem;
+    right: 6rem;
     top: 8rem;
 }
 
 .heart-rate>img {
-    width: 3rem;
+    width: 2rem;
 }
 
 .heart-rate>:nth-child(2) {
@@ -142,7 +141,7 @@
 
 .heart-rate>:nth-child(3) {
     color: white;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .hero-image {
@@ -169,11 +168,11 @@
     width: fit-content;
     position: absolute;
     top: 38rem;
-    right: 36rem;
+    right: 40rem;
 }
 
 .calories>img {
-    width: 5rem;
+    width: 4rem;
 }
 
 .calories>div {

@@ -20,7 +20,7 @@ export const testimonialsData = [
   {
     image: image3,
     review:
-      " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima aspernatur quod voluptatem",
+      " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima aspernatur quod voluptatem  amet consectetur adipisicing elit. Commodi ipsam, ",
     name: "FRANKLIN",
     status: "CUSTOMER",
   },
