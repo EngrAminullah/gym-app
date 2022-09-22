@@ -88,3 +88,40 @@
     width: 2.5rem;
 
 }
+
+@media screen and (max-width:768px) {
+    .Reasons {
+        flex-direction: column;
+        margin-top: -30px;
+    }
+
+    .left-r {
+        grid-auto-rows: auto;
+        overflow: hidden;
+    }
+
+    .left-r>:nth-child(1) {
+        width: 6rem;
+        height: 16rem;
+    }
+
+    .left-r>:nth-child(2) {
+        width: 16rem;
+        height: 11rem;
+    }
+
+    .left-r>:nth-child(3) {
+        width: 9rem;
+
+    }
+
+    .left-r>:nth-child(2) {
+        width: 8.5rem;
+        height: 7.5rem;
+    }
+
+
+
+
+
+}
